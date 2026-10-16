@@ -95,8 +95,10 @@ Here, word `age` is an identifier since it is not a keyword and can be used as v
 These are the following types of literals used in Python -
 - Integer `(int)` - 1, 2, 3, 4, 5
 - Float `(float)` - 1.3, 3.14
-- String `(str)` - "apple","berry"
-- Special `(None)` - `None`
+- String `(str)` - "apple","berry" 
+Note -String is basically group of characters,symbols,digits, words,etc.
+It is written with single/double quotes.
+- None `(None)` - `None`
 - Collection Literal - List, Tuple, Set, Dict, these are built from above tokens.
 
 4. Operators - are the tokens that are used to perform operations on/between one or more values.
