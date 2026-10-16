@@ -1,2 +1,3 @@
-# Introduction to Python
+# Introduction to Python and basic terms
+
 
