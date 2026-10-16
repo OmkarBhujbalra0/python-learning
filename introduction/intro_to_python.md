@@ -95,6 +95,7 @@ Here, word `age` is an identifier since it is not a keyword and can be used as v
 These are the following types of literals used in Python -
 - Integer `(int)` - 1, 2, 3, 4, 5
 - Float `(float)` - 1.3, 3.14
+- Boolean `(bool)` - True, False
 - String `(str)` - "apple","berry" 
 Note -String is basically group of characters,symbols,digits, words,etc.
 It is written with single/double quotes.

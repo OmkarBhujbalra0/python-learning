@@ -69,7 +69,13 @@ print(str(45)) # This will print "45" instead of 45.
 ```
 
 `int` <---> `float` 
+
 `int`,`float` ----> `string` 
+
+`bool` <----> `int`
+Converting boolean into integer: True is converted to 1 and False is converted to 0
+Converting integer values into boolean: Integers greater than 0 becomes True and 0 becomes False.
+
 `string` ---> `int` or `float` (only when string contains only numbers.)
 
 The process of using int(),float(),str() function to convert the data type is called as `Explicit Type Casting`, manually done by programmer.
