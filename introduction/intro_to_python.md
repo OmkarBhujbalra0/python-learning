@@ -108,8 +108,8 @@ These are the types of Operators in Programming Language:
 
 - Arithmetic Operators - +, -, *, /, % 
 - Assignment Operator - =, -=, +=, *=
-- Comparison Operators - ==, <, >, <=, >+, 
+- Comparison Operators - ==, <, >, <=, >=, 
 - Unary Operators - Prefix and Postfix 
-- Ternary Operator - condition1`?`result1`:`result2 
+- Ternary Operator - condition1`?`result1`:`result2 (in C/C++)
 - Bitwise Operators - &, |, ~
 - Logical Operators - and, or, not
