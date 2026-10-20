@@ -73,5 +73,8 @@ print(c)
 print(~d)
 print(0 or 67)
 print(6 and 2)
+
+# Bitwise Operators
+
 print(6 & 2)
 print(6 | 2)
