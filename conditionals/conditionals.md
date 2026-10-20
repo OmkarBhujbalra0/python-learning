@@ -1,4 +1,6 @@
-# Conditionals
+# Conditionals and Match Statement
+
+## Conditionals
 
 Conditionals are the statements that performs tasks based on given condition, `if` condition is True, task is performed `else` it is not performed.
 - Whatever you learnt in Operators, will be used here.
@@ -33,6 +35,8 @@ else:
     print("c is highest of them all.")
 ```
 
+Note - You can have multiple number of elif statements between if and else statements for performing tasks based on multiple conditions.
+
 3. `if` - if statement can be used if you only want to perform one task if condition is True and no task if the condition is False.
 - Below code will print the statement only if age is greater than or equal to 18.
 ```
@@ -41,3 +45,31 @@ age = 18
 if age >= 18:
     print("You are Eligible for Driving License.")
 ``` 
+
+4. Nested if-else - Nested if-else statements are used if you want to perform task if condition within condition is True.
+- Here, we use if and elif statement multiple times for checking multiple conditions and based on that we perform tasks.
+- In the below code, we are checking the year and course name of student, where if `course` name is computer and `year` is first then it will print `First Year Student of Computer Engineering` else it will move forward to elif or else statements.
+```
+course = 'computer'
+year = 'first'
+
+if year == 'first':
+    if course == 'computer':
+        print("First Year Student of Computer Engineering")
+    elif course == 'it':
+        print("First Year Student of IT")
+    else:
+        print("First Year Student")
+elif year == 'second':
+    print("Second Year Student")
+elif year == 'third':
+    print("Third Year Student")
+elif (year == 'final') or (year == 'fourth'):
+    print("Final Year Student")
+```
+
+Note -  `else` statement is optional, usually used when you need to perform some other task without stating the condition when the if statement fails, you can perform task based on conditions by only using `if` or `elif` as we did above. 
+
+5. One-line Conditional Statement (Ternary Operator) - are used to simple conditionals statements to perform simple tasks.
+
+`print("Eligible") if age > 18 else print("Not Eligible")`
