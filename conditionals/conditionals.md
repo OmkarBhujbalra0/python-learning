@@ -72,7 +72,13 @@ Note -  `else` statement is optional, usually used when you need to perform some
 
 5. One-line Conditional Statement (Ternary Operator) - are used to simple conditionals statements to perform simple tasks.
 
-`print("Eligible") if age > 18 else print("Not Eligible")`
+```
+print("Eligible") if age > 18 else print("Not Eligible")
+
+gender = "Male"
+result = "Man" if gender == "Male" else "Female"
+print(result)
+```
 
 ## Match Case
 

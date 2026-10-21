@@ -65,6 +65,10 @@ elif (year == 'final') or (year == 'fourth'):
 
 print("Eligible") if age > 18 else print("Not Eligible")
 
+gender = "Male"
+result = "Man" if gender == "Male" else "Female"
+print(result)
+
 # Match Case
 
 subject = "Internet Programming" 
@@ -78,3 +82,12 @@ match subject:
         print("Subject name is Software Engineering")
     case _ : 
         print("Invalid Subject Name")
+
+# Conditionals with input function
+
+age = input("Enter your age:")
+
+if age >= 18:
+    print('Eligible.')
+else:
+    print('Not Eligible.')
