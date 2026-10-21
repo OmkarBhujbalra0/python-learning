@@ -64,3 +64,17 @@ elif (year == 'final') or (year == 'fourth'):
 # One line Conditional Statement
 
 print("Eligible") if age > 18 else print("Not Eligible")
+
+# Match Case
+
+subject = "Internet Programming" 
+
+match subject:
+    case "Computer Networks" : 
+        print("Subject name is Computer Networks")
+    case "Internet Programming" : 
+        print("Subject name is Internet Programming")
+    case "Software Engineering" : 
+        print("Subject name is Software Engineering")
+    case _ : 
+        print("Invalid Subject Name")

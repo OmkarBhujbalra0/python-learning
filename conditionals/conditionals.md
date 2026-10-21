@@ -73,3 +73,24 @@ Note -  `else` statement is optional, usually used when you need to perform some
 5. One-line Conditional Statement (Ternary Operator) - are used to simple conditionals statements to perform simple tasks.
 
 `print("Eligible") if age > 18 else print("Not Eligible")`
+
+## Match Case
+
+Match Case is statement which checks whether the value of given variable matches with specific pattern and perform tasks based on condition that is True.
+- In the code below, the variable `subject` is assigned with string `"Computer Networks"` and the match statements tries to matche the string with patterns given in each case, if the string match with any pattern, the task is perform based on that.
+- In this case, `"Subject name is Computer Networks"` will be printed. 
+- Also, there is underscore used at the last case, if none of the patterns match the given string, the code under this case will be executed.
+
+```
+subject = "Computer Networks"
+
+match subject:
+    case "Computer Networks" : 
+        print("Subject name is Computer Networks")
+    case "Internet Programming" : 
+        print("Subject name is Internet Programming")
+    case "Software Engineering" : 
+        print("Subject name is Software Engineering")
+    case _ : 
+        print("Invalid Subject Name")
+```
