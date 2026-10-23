@@ -9,3 +9,4 @@ Along with Python you are also going to learn programming fundamentals which rem
 - [operators](https://github.com/OmkarBhujbalra0/python-learning/tree/main/operators) - Operators
 - [conditionals](https://github.com/OmkarBhujbalra0/python-learning/tree/main/conditionals) - Conditionals
 - [loops](https://github.com/OmkarBhujbalra0/python-learning/tree/main/loops) - Loops
+- [functions](https://github.com/OmkarBhujbalra0/python-learning/tree/main/functions) - Functions

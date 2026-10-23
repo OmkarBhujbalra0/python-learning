@@ -31,6 +31,7 @@ For ex - `result = a ** b`
 2. Assignment Operators - are operators that is used to assign value to the variable.
 
 - `+=` - is used to add one value with value assigned to variable and assign the result to variable.
+- It works like this: a = a + 5
 For example - 
 
 ```
@@ -39,33 +40,52 @@ a+=3 # 3 is added to 5 and the result is assigned to a
 print(a)  # --> The result will be 8 
 ```
 - `-=` - is used to subtract value from value assigned to variable and assign the result to variable.
-
+- It works like this: a = a - 5
 ```
 a = 5
 a -= 3
 print(a) # --> Returns 2
 ``` 
 - `*=` - is used to multiply value with value assigned to variable and assign the result to variable.
-
+- It works like this: a = a * 5
 ```
 a = 5
 a *= 3
 print(a) # --> Returns 15
 ``` 
 - `/=` - is used to divide value assigned to variable with another value and assign the result to variable.
-
+- It works like this: a = a / 5
 ```
 a = 6
 a /= 3
 print(a) # --> Returns 2.0
 ``` 
 - `%=` - is used to divide value assigned to variable with another value and assign the result(remainder) to variable.
-
+- It works like this: a = a % 5
 ```
 a = 5
 a %= 3
 print(a) # --> Returns 2
 ``` 
+
+- `:=` (Walrus Operator) - allows you to assign and use the value in the expression in the same line.
+- The code below checks whether the inputted number is even or odd.
+```
+a = int(input("Enter the number to check whether its Odd or Even:"))
+
+if a % 2 == 0:
+    print(f"{a} is even")
+else:
+    print(f"{a} is odd")
+```
+
+- The code below does the same thing but this time using walrus operator, due to which you can assign the input value to variable and use it in same line for checking the condition.
+```
+if (b := int(input("Enter the number:"))) % 2 == 0:
+    print(f"{b} is even")
+else:
+    print(f"{b} is odd")
+```
 
 3. Relational (Comparison) Operators - are used to compare the values of 2 or more variables.
 

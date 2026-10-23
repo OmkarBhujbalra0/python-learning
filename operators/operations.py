@@ -39,6 +39,23 @@ c = 4
 c %= 2 # Divides 4 by 2 and assigns the remainder to c
 print(c)
 
+# Walrus Operator
+
+# Code without walrus operator
+a = int(input("Enter the number to check whether its Odd or Even:"))
+
+if a % 2 == 0:
+    print(f"{a} is even")
+else:
+    print(f"{a} is odd")
+
+
+# Code with walrus operator
+if (b := int(input("Enter the number:"))) % 2 == 0:
+    print(f"{b} is even")
+else:
+    print(f"{b} is odd")
+
 # Relational Operators
 
 d = 5
