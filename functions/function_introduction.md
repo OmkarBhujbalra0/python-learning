@@ -17,7 +17,9 @@ def check_number(number):
 2. Function Call - is using the function by calling its name.
 - The code below is calling the function `check_number` which will print `4 is positive`.
 
-`check_number(4)`
+```
+check_number(4)
+```
 
 (Note - Function Declaration is when you declare that function exists in the program, Function Declaration and Definition are separate steps in languages like C/C++, but in case of python, both are the same thing.)
 

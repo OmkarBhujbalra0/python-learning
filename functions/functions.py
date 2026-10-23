@@ -27,3 +27,11 @@ def number_checker(number):
     check_even_or_odd(number) # check_even_or_odd function written to be called
 
 number_checker(5) # number_checker function is called which calls both the functions under it and prints the respective results.
+
+# function with return statement
+
+def addition(a, b):
+    return a + b
+
+result = addition(3,4)
+print(result)
