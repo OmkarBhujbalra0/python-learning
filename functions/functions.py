@@ -35,3 +35,137 @@ def addition(a, b):
 
 result = addition(3,4)
 print(result)
+
+# Local Scope
+
+def scope_checker():
+    message = "Hello" # We defined the variable message with value "Hello"
+    print(message)
+
+scope_checker() # prints "Hello"
+# print(message) # raises error since we are trying to access the message variable  outside its scope.
+
+# Global Scope
+
+age = 34 # Global Variable
+
+def age_checker():
+    if age >= 18:
+        print("Eligible")
+    else:
+        print("Ineligible")
+
+age_checker()
+
+# Enclosing Scope
+
+def outer_function():
+    outer_var = "Outer Value"
+    print(f"This is printed using outer function, {outer_var}")
+
+    def inner_function():
+        print(f"This is printed using inner function, {outer_var}")
+
+    inner_function()
+
+outer_function()
+
+# global keyword
+
+age = 34
+print(age)
+def change_age():
+    global age
+    age = age + 4
+    print(age)
+    
+change_age()
+print(age)
+
+# nonlocal
+
+def outer_function():
+    age = 35
+    print(age)
+    
+    def inner_function():
+        nonlocal age
+        age = age + 6
+        print(age)
+        
+    inner_function()
+    
+outer_function()
+
+# Positional Arguments
+
+def input_data(name, age, gender):
+    print(f"Name:{name}")
+    print(f"Age:{age}")
+    print(f"Gender:{gender}")
+
+input_data("Rajesh",23,"Male")
+
+# Keyword Arguments
+
+def input_data(name, age, gender):
+    print(f"Name:{name}")
+    print(f"Age:{age}")
+    print(f"Gender:{gender}")
+
+input_data(name="Rajesh",age=23,gender="Male")
+
+# Multiple return statements
+
+age = 24
+
+def eligibility_checker():
+    if age >= 18:
+        return "Eligible"
+    return "Not Eligible"
+
+result = eligibility_checker()
+print(result)
+
+# Multiple values returned by return statement
+
+def multi_return():
+    return 1, 2, 3
+
+a, b, c = multi_return()
+print(a)
+print(b)
+print(c)
+
+# Lambda Function
+
+addition_result = lambda x, y: x + y 
+print(addition_result(33,42))
+
+# Lambda Function with if-else
+
+num_check = lambda x: "Even" if x % 2 == 0 else "Odd"
+print(num_check(3))
+
+# Recursion
+# Factorial
+def fact(num):
+    if num == 0:
+        return 1
+
+    return num * fact(num - 1)
+
+print(fact(5))
+
+# Fibonacci
+
+def fibo(num):
+    if num == 1:
+        return 0
+    elif num == 2:
+        return 1
+    else:
+        return fibo(num - 1) + fibo(num - 2)
+
+for i in range(1,10):
+    print(fibo(i))
