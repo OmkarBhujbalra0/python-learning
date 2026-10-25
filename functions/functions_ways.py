@@ -75,3 +75,33 @@ a, b, c = multi_return()
 print(a)
 print(b)
 print(c)
+
+# Functions with arbitrary number of parameter
+
+# Arbitrary Parameter -> used when number of arguments are not known
+
+def multi_params(*numbers):
+    return f"List of Numbers: {numbers}"
+
+result = multi_params(1,2,3,4,5,6)
+print(result)
+
+def multi_params(single,*numbers):
+    return single,f"List of Numbers: {numbers}"
+
+single_num,result = multi_params(1,2,3,4,5,6)
+print(single_num,result)
+
+def multi_params(*numbers,single): # Always use regular argument before arbitrary arguments
+    return single,f"List of Numbers: {numbers}"
+
+single_num,result = multi_params(1,2,3,4,5,single=6)
+print(single_num,result)
+
+# Arbitrary Keyword Arguments -> Works like Arbitrary Arguments
+
+def multi_kw_params(**details):
+    return details
+
+result = multi_kw_params(name="rajesh",age=34,gender="Male",course="computer")
+print(result)

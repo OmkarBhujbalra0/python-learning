@@ -15,6 +15,8 @@ def addition(a, b): # -> a and b are parameters
 addition(3, 4) # -> 3 and 4 are arguments (values) passed during function call
 ```
 
+# Positional and Keyword Arguments
+
 There are 2 ways to pass values in function using arguments:
 
 - Positional Arguments - are the arguments that assign values to parameters based on their positions during the function call.
@@ -138,4 +140,58 @@ def check_status(status):
 
 message = check_status("active")
 print(message)
+```
+
+## Arbitrary Arguments (*args)
+
+`*args` is used when the programmer don't know how many arguments will be passed to the function.
+- It is defined using `*name_of_parameter`
+- Function using arbitrary parameter uses all the arguments in form of tuple (data structure in Python)
+- Suppose if you pass arguments in function using arbitrary arguments like this
+`function_name(*args)`
+`function_name(1,2,3,4,5,6)`
+- The function will assign all the data in the form of tuple (1,2,3,4,5,6) to paramter `params`.
+- The below function uses *args and called with multiple arguments, the arguments are used in the form of tuple (1,2,3,4,5,6) and assigned to variable `result`, which is then printed.
+```
+def multi_params(*numbers):
+    return f"List of Numbers: {numbers}"
+
+result = multi_params(1, 2, 3, 4, 5, 6)
+print(result) # (1, 2, 3, 4, 5, 6)
+```
+
+### Arbitrary arguments with regular arguments
+- You can also use regular arguments with arbitrary arguments in the functions.
+- In the code below, the function uses regular and arbitrary arguments together, the following values are passed in the arguments.
+(1,2,3,4,5,6,7)
+Since we mentioned the `normal` (regular argument), the first value `1` will be assigned to `normal` and remaining values (2, 3, 4, 5, 6, 7) will be collected in tuple and assigned to variable `multiple`.
+
+def mix_params(normal,*multiple):
+    return f"Regular Arguments {normal} and Arbitrary Arguments {multiple}"
+
+message = mix(1, 2, 3, 4, 5, 6, 7)
+print(message)
+
+- Note - Always write regular argument before arbitrary arguments during function definition, or else all the values passed during function call will be collected by arbitrary arguments and no value will be assigned to regular argument, returning error.
+- You can avoid this situation by also using keyword argument to make sure atleast one value is assigned to regular parameter.
+```
+def multi_params(*numbers,single): # Always use regular argument before arbitrary arguments
+    return single,f"List of Numbers: {numbers}"
+
+single_num,result = multi_params(1,2,3,4,5,6)
+print(single_num,result)
+```
+
+## Arbitrary Keyword Arguments (**kwargs)
+
+**kwargs is when the number of keyword arguments that are going to be passed in function is not known.
+- It is defined using `**name_of_parameter`.
+- Function using arbitrary keyword arguments collected the arguments in form of dictionary (Data Structure in Python) and is assigned to the parameter.
+
+```
+def multi_kw_params(**details):
+    return details
+    
+data = multi_kw_params(name="rajesh",age=34,gender="male",course="computer")
+print(data) # {'name':'rajesh','age':34,'gender':'male','course':'computer'}
 ```
