@@ -195,3 +195,16 @@ def multi_kw_params(**details):
 data = multi_kw_params(name="rajesh",age=34,gender="male",course="computer")
 print(data) # {'name':'rajesh','age':34,'gender':'male','course':'computer'}
 ```
+
+# Default Arguments
+
+- You can also assign default values to the parameters so that even if user forgets to pass the arguments, the default value is used for operations.
+```
+def greeting(name="user"):
+    return f"Hello, {name}"
+    
+message1 = greeting("Raman") 
+message2 = greeting() 
+print(message1) # prints "Hello, Raman"
+print(message2) # prints "Hello, user"
+```

@@ -105,3 +105,14 @@ def multi_kw_params(**details):
 
 result = multi_kw_params(name="rajesh",age=34,gender="Male",course="computer")
 print(result)
+
+# Default Arguments
+
+def greeting(name="user"):
+    return f"Hello, {name}"
+    
+message1 = greeting("Raman") # prints "Hello, Raman"
+message2 = greeting() # prints "Hello, user"
+
+print(message1)
+print(message2)
