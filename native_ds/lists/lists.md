@@ -37,6 +37,8 @@ a.append(8)
 print(a) # prints [1,2,3,4,5,6,8]
 ```
 
+- Lists are mutable (something that you can modify), you can add,insert,update or delete the list.
+
 # Inserting the value in the list
 
 You can insert the values using `insert` function, which takes 2 arguments.
@@ -72,4 +74,30 @@ print(d)
 e = [1,2,3,4,2,6]
 e.remove(2) # removes first occurence of 2 which is at index 1
 print(e) # [1,3,4,2,6]
+```
+
+# Delete the list
+
+- You can delete the list using `del` keyword before the variable to which the list is assigned.
+```
+f = [2,4,7,3,8]
+del f
+print(f) # Since list is deleted, there is no value assigned to f, so it will return error
+```
+
+# Sort the values in the list
+
+- Using sort function you can sort the values in the list.
+
+```
+g = [4,67,1,85,5]
+
+g.sort()
+print(g)
+```
+```
+h = [53,51,57,124,21]
+
+h.sort(reverse=True)
+print(h)
 ```
