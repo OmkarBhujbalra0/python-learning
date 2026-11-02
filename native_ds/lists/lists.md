@@ -101,3 +101,36 @@ h = [53,51,57,124,21]
 h.sort(reverse=True)
 print(h)
 ```
+
+# Using for loop to access the values from the list
+
+- You can use for loop for accessing values from the list in two ways:
+
+1. Accessing using index
+
+- You can access using index by initiating value from 0 till the value of length of list(since this value is not included in for loop, the iteration is going to be till (length of list - 1))
+
+```
+i = [34,62,25,74,25]
+
+for index in range(0,len(i)):
+    print(i[index])
+```
+
+2. Looping through List
+
+```
+j = [34,52,57,86,34]
+
+for item in j:
+    print(item)
+```
+
+# Concatenation of multiple lists
+
+- You can add the elements of two or more lists into single list.
+```
+k = [12,43,46,76,24]
+l = [35,15,72,23,41]
+print(k+l)
+```

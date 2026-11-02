@@ -60,3 +60,25 @@ h = [53,51,57,124,21]
 
 h.sort(reverse=True)
 print(h)
+
+# Accessing values from list using for loop
+
+# Using index
+
+i = [34,62,25,74,25]
+
+for index in range(0,len(i)):
+    print(i[index])
+
+# Looping through the list 
+
+j = [34,52,57,86,34]
+
+for item in j:
+    print(item)
+
+# List Concatenation
+
+k = [12,43,46,76,24]
+l = [35,15,72,23,41]
+print(k+l)
