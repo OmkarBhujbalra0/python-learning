@@ -2,7 +2,7 @@
 
 Sets are another data structure in Python that stores only unique values.
 - You have seen the concept of sets in mathematics, just like that, sets in Python also deals with operations like Intersection, Union, etc.
-
+- Sets are mutable, it can be modified.
 - An empty set is defined using set() function.
 - You can also create set with multiple values in it using `{}`
 - If you try to define an empty set using only {}, it will create a dictionary instead of set.
@@ -133,7 +133,7 @@ print(result_2)
  - Symmetric Difference operation can be performed using `symmetric_difference()` or `^` operator.
 
  ```
- set_one = {3,2,41,22,43}
+set_one = {3,2,41,22,43}
 set_two = {24,51,2,12,41}
 result_1 = set_one ^ set_two # {3,22,43,51,12,24}
 print(result_1)
@@ -171,4 +171,14 @@ set_one = {1,2,3,4,5}
 set_two = {2,3,52,3,5}
 set_one.symmetric_difference_update(set_two)
 print(set_one)
+```
+
+## Frozen Set
+
+- Frozen Sets are sets that are immutable, it cannot be changed.
+- A frozen set is defined using frozen set and values are passed in form of list.
+```
+j = frozenset([12,34,14,53,21])
+print(type(j))
+print(j)
 ```

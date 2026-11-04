@@ -104,3 +104,15 @@ set_one = {35,21,36,23,12}
 set_two = {24,51,3,23,21}
 set_one.symmetric_difference_update(set_two)
 print(set_one)
+
+# Frozen set
+
+i = frozenset([12,34,14,53,21])
+print(type(i))
+print(i)
+
+# Membership Testing in Set
+
+j = {23,41,24,51,12}
+if 52 in j:
+    print("52 is in j")

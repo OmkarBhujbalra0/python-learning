@@ -22,3 +22,11 @@ print(e + f)
 
 g = (35,2,53,12)
 print(g[1:4])
+
+# Membership Testing
+
+# Membership Testing in List
+
+h = (23,41,25,61,12,51)
+if 52 in h:
+    print("52 is in m")

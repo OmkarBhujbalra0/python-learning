@@ -82,3 +82,9 @@ for item in j:
 k = [12,43,46,76,24]
 l = [35,15,72,23,41]
 print(k+l)
+
+# Membership Testing in List
+
+m = [23,41,25,61,12,51]
+if 51 in m:
+    print("51 is in m")
