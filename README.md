@@ -6,9 +6,11 @@ Along with Python you are also going to learn programming fundamentals which rem
 | Folder Name | Concepts |
 |:-----------:|:--------:|
 | [introduction](https://github.com/OmkarBhujbalra0/python-learning/tree/main/introduction) | Basic Introduction to Programming and programming terms. |
-| [basic_i_o](https://github.com/OmkarBhujbalra0/python-learning/tree/main/basic_i_o) | Input and Output |
-| [variables_dtypes](https://github.com/OmkarBhujbalra0/python-learning/tree/main/variables_dtypes) | Variables, Data Types and Type Casting |
+| [basic input/output](https://github.com/OmkarBhujbalra0/python-learning/tree/main/basic_i_o) | Input and Output |
+| [variables and data types](https://github.com/OmkarBhujbalra0/python-learning/tree/main/variables_dtypes) | Variables, Data Types and Type Casting |
 | [operators](https://github.com/OmkarBhujbalra0/python-learning/tree/main/operators) |  Operators |
 | [conditionals](https://github.com/OmkarBhujbalra0/python-learning/tree/main/conditionals) | Conditionals |
 | [loops](https://github.com/OmkarBhujbalra0/python-learning/tree/main/loops) | Loops |
 | [functions](https://github.com/OmkarBhujbalra0/python-learning/tree/main/functions) | Functions |
+| [native data structures](https://github.com/OmkarBhujbalra0/python-learning/tree/main/native_ds) | List, Tuples, Sets and Dictionaries |
+| [strings](https://github.com/OmkarBhujbalra0/python-learning/tree/main/strings) | Strings |
