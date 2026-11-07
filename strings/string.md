@@ -84,7 +84,7 @@ l = l.upper() # The new string in uppercase is created and assigned to variable 
 print(l)
 ```
 
-2. `lower()` function - The lower() function basically creates a new string with all the characters in lowercase.
+2. `lower()` function - The lower() function creates a new string with all the characters in lowercase.
 
 ```
 m = "Apple"
@@ -92,10 +92,90 @@ m = m.lower() # The new string in lowercase is created and assigned to variable 
 print(m)
 ```
 
-3. `capitalize()` function - The capitalize() function basically creates a new string where first character is capitalized.
+3. `capitalize()` function - The capitalize() function creates a new string where first character is capitalized.
 
 ```
 n = "apple"
 n = n.capitalize() # The new capitalized string is created and assigned to variable n.
 print(n)
+```
+
+3. `split()` function - The split() function creates a list of characters or group of characters using a string passed as an argument.
+
+```
+o = "Drumsticks"
+o = o.split() # ["Drumsticks"]
+print(o)
+
+p = "Eggplants,Figs,Ginger" 
+p = p.split(",") # Split wherever there is ','
+print(p) # ["Eggplants","Figs","Ginger"]
+```
+
+4. `strip()` function - creates a new string where given string is stripped out before and after the actual string.
+
+```
+q = " Indigo "
+q = q.strip(" ")
+print(q) # "Indigo"
+
+r = "JJackfruitJ"
+r = r.strip("J") 
+print(r) # "ackfruit"
+```
+
+5. `join()` function - creates a string by joining all the elements in the list using a given string.
+
+```
+s = ["K","i","w","i"]
+s = "".join(s)
+print(s) # "Kiwi"
+
+t = ["L","a","v","e","n","d","e","r"]
+t = ".".join(t)
+print(t) # "L.a.v.e.n.d.e.r"
+```
+
+6. `replace()` function - creates a new string where all the intended characters or group of characters are replaced by given string.
+
+```
+u = "Mango Showers"
+u = u.replace("o","a")
+print(u) # "Manga Shawers"
+```
+
+7. `find()` function - returns the index of first occurence of given character or group of characters.
+
+```
+v = "Orange"
+print(v.find("a")) # 2
+
+w = "Pineapple"
+print(w.find("p")) # 5
+```
+
+## Looping through the list
+
+- You can loop directly through the string or using for loop.
+
+```
+x = "Quinoa"
+for i in range(0,len(x)):
+    print(x[i]) # Q u i n o a
+    
+y = "Rice"
+for item in y:
+    print(item) # R i c e
+```
+
+## Membership Testing
+
+```
+if "app" in "Apple": # returns nothing since "app" is not in "Apple"
+    print(True)
+    
+z = "Sweet Potato"
+
+if "Sweet" in z:
+    print(True) # returns True since "Sweet" is present
 ```
