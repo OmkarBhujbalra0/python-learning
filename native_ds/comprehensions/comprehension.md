@@ -102,3 +102,25 @@ for j in range(0,len(g)):
     i[g[j]] = h[j] # "Red": "Scarlet" "Blue":"Cyan "Violet":"Lavender"
 print(i) # {"Red": "Scarlet","Blue":"Cyan,"Violet":"Lavender"}
 ```
+
+## Generator Comprehension
+
+- Generator Comprehension basically is way of creating a generator in Python, just like lists and sets.
+- Generator Comprehension is done using `()`
+- You can learn more about Generators from [generators](https://github.com/OmkarBhujbalra0/python-learning/tree/main/generators) folder.
+```
+k = (x for x in range(1,6))
+print(k) # This will return generator object <generator object <genexpr> as an output instead of displaying values.
+
+for value in k:
+    print(value) # 1 2 3 4 5
+```
+
+In Generators, you basically access the values whenever required instead of accessing all the values at once like list or set.
+- Using `next()` function while printing the values, you can access the one value and the execution continues from next value
+
+```
+j = (x for x in range(1,6))
+print(next(j)) # 1
+print(next(j)) # 2
+```

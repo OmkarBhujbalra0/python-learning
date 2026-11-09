@@ -14,3 +14,5 @@ Along with Python you are also going to learn programming fundamentals which rem
 | [functions](https://github.com/OmkarBhujbalra0/python-learning/tree/main/functions) | Functions |
 | [native data structures](https://github.com/OmkarBhujbalra0/python-learning/tree/main/native_ds) | List, Tuples, Sets and Dictionaries |
 | [strings](https://github.com/OmkarBhujbalra0/python-learning/tree/main/strings) | Strings |
+| [comprehensions](https://github.com/OmkarBhujbalra0/python-learning/tree/main/native_ds/comprehensions) | Comprehensions |
+| [generators](https://github.com/OmkarBhujbalra0/python-learning/tree/main/generators) | Generators |

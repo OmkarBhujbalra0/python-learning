@@ -67,4 +67,10 @@ for j in range(0,len(g)):
     i[g[j]] = h[j]
 print(i)
 
-# Dictionary Comprehension using List
+# Generator Comprehension
+
+k = (x**2 for x in range(1,6))
+print(k)
+
+for value in k:
+    print(value)
