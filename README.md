@@ -16,3 +16,4 @@ Along with Python you are also going to learn programming fundamentals which rem
 | [strings](https://github.com/OmkarBhujbalra0/python-learning/tree/main/strings) | Strings |
 | [comprehensions](https://github.com/OmkarBhujbalra0/python-learning/tree/main/native_ds/comprehensions) | Comprehensions |
 | [generators](https://github.com/OmkarBhujbalra0/python-learning/tree/main/generators) | Generators |
+| [decorators](https://github.com/OmkarBhujbalra0/python-learning/tree/main/decorators) | Decorators |
