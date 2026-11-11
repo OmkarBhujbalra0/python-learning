@@ -31,3 +31,23 @@ props = Car()
 print(props.brand)
 print(props.color)
 ```
+
+You can also add attributes to objects.
+- In the code below, the class `A` actually contains 2 attributes `name` and `age`, we create an object `s1` and create an attribute `year` for object `s1`.
+- We can access the attribute `year` from object `s1` but not from original class `A`, since class `A` doesn't have attribute `year`.
+```
+class A:
+    name = "ram"
+    age = 23
+    
+s1 = A()
+
+print(s1.name) # "ram"
+print(s1.age) # 23
+
+print(A.name) # "ram 
+
+s1.year = 2003 # Adding an attribute outside the object.
+print(s1.year) # 2003
+print(A.year) # AttributeError since the attribute is added to object s1 not the original class A
+```
