@@ -72,16 +72,53 @@ s2.input_name("Banana")
 print(s2.name) # Banana
 ``` 
 
+Note - self is not a keyword so you can use any word (not a keyword) as self parameter but the reason we usually use self parameter is because its a convention of writing parameter to pass the object reference.
+
 What if we don't use self parameter?
 - In the below example, we are creating a class `Screen` containing display method, now the problem is there is no `self` parameter, due to which the method doesnt get the reference of the current object `s1` and it raises error.
 Note - The methods need the reference of the object to work with, and it expects the reference as parameter, that's why `self` parameter is used.
+- The `Screen.display()` will execute the method since the method is directly accessed from class without using any object.
+
 ```
 class Screen:
     def display():
         print("This will not be printed due to error")
         
 s1 = Screen()
+Screen.display() # This method will be executed since the method is now directly accessed from class
 
 s1.display() # returns error since the class except self parameter for passing the reference of the object
 ``` 
 
+## init constructor
+
+init constructor is special method that initializes the object in the class.
+- You don't need to call init constructor like other methods, it is executed automatically when object is created.
+- The self parameter is passed in init constructor to pass the object reference to work with.
+- init constructor allows you to input the data to work with during creation of object, instead of manually inputting the data after creating object.
+
+```
+class Student:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+        
+    def display(self):
+        return f"Name of Student {self.name} and age is {self.age}."
+```
+
+## without init 
+
+- In the code below, the class `Noinit` does have init constructor due to which you cannot input data while creating the object at the same time, so you have to run the `adder` method which takes `self` and `amount` as a parameters and inputs data into the parameter amount.
+- Unless you don't call `adder` method with argument, there is no attribute called `amount`
+```
+class Noinit:
+    def adder(self,amount):
+        self.amount = amount
+        
+s1 = Nonit()
+print(s1.amount) # Attribute doesn't exist
+
+s1.display(345) 
+print(s1.amount) # 345
+```

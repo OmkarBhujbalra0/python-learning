@@ -50,5 +50,32 @@ class Screen:
         print("This will not be printed due to error")
         
 s1 = Screen()
-
+Screen.display() # The display method will be executed and the message will be printed since the method is directly accessed from class.
 # s1.display() # returns error since the class except self parameter for passing the reference of the object
+
+# init constructor
+
+class Student:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+
+    def display(self):
+        return f"Student Name is {self.name} and age is {self.age}."
+
+s1 = Student("Rajesh",35)
+print(s1.display())
+print(s1.name)
+print(s1.age)
+
+
+# without init
+
+class Noinit:
+    def display(self,amount):
+        self.amount = amount
+
+s1 = Noinit()
+print(s1.amount)
+s1.display(45)
+print(s1.amount)
