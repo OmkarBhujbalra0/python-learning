@@ -32,4 +32,23 @@ print(s1.age) # 23
 s1.year = 2003 # Adding an attribute outside the object.
 print(s1.year)
 print(A.name)
-print(A.year)
+# print(A.year)
+
+# self parameter
+
+class s:
+    def display(self):
+        print("Apple")
+
+s1 = s()
+s.display(s1)
+
+# Without self parameter
+
+class Screen:
+    def display():
+        print("This will not be printed due to error")
+        
+s1 = Screen()
+
+# s1.display() # returns error since the class except self parameter for passing the reference of the object

@@ -51,3 +51,37 @@ s1.year = 2003 # Adding an attribute outside the object.
 print(s1.year) # 2003
 print(A.year) # AttributeError since the attribute is added to object s1 not the original class A
 ```
+
+## self parameter
+
+The `self` parameter is parameter that provides reference of the current object(instance) of the class.
+- In the code below, we have created a class `Fruits` with a method (function defined inside the class) `input_name` with `self` and `name` parameters passed to it.
+- We create two objects `s1` and `s2` from Fruits and pass the arguments to them.
+```
+class Fruits:
+    def input_name(self,name):
+        self.name = name
+        
+s1 = Fruits()
+s2 = Fruits()
+
+s1.input_name("Apple")
+print(s1.name) # Apple
+
+s2.input_name("Banana")
+print(s2.name) # Banana
+``` 
+
+What if we don't use self parameter?
+- In the below example, we are creating a class `Screen` containing display method, now the problem is there is no `self` parameter, due to which the method doesnt get the reference of the current object `s1` and it raises error.
+Note - The methods need the reference of the object to work with, and it expects the reference as parameter, that's why `self` parameter is used.
+```
+class Screen:
+    def display():
+        print("This will not be printed due to error")
+        
+s1 = Screen()
+
+s1.display() # returns error since the class except self parameter for passing the reference of the object
+``` 
+
