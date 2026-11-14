@@ -76,6 +76,31 @@ class Noinit:
         self.amount = amount
 
 s1 = Noinit()
-print(s1.amount)
-s1.display(45)
-print(s1.amount)
+# print(s1.amount) # Returns error since the attribute amount does not exists
+s1.display(45) 
+print(s1.amount) # Returns 45 since the attribute is now defined using display method
+
+# Instance Methods
+
+class Person:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+
+    def display(self):
+        print(f"Name is {self.name} and age is {self.age}")
+
+s1 = Person("Raj",45) 
+s1.display() # Instance Method
+
+# Static Method
+
+class statics:
+    @staticmethod
+    def add(age):
+        if age > 18:
+            print("Eligible")
+        else:
+            print("Not eligible")
+
+statics.add(34)

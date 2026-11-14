@@ -95,3 +95,21 @@ class Car(Vehicle):
 s1 = Car("Storm","Blue",4,"Car")
 print(s1.wheel_count)
 print(s1.color)
+
+# Method Resolution Order
+
+class Vehicle():
+    def display(self):
+        print("This is printed from Vehicle Class")
+ 
+class Driver():
+    def display(self):
+        print("This is printed from Driver Class")
+
+class Car(Vehicle, Driver):
+    pass 
+ 
+s1 = Car()
+s1.display()
+
+print(Car.__mro__)

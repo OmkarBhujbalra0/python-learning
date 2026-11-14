@@ -129,3 +129,28 @@ s1 = Car("Storm","Blue",4,"Car")
 print(s1.wheel_count)
 print(s1.color)
 ```
+
+## Method Resolution Order
+
+Method Resolution Order is basically the order in which the child class inherits methods or attributes from multiple parent classes.
+- When there are multiple parent classes with same method or attribute names, Method Resolution Order resolves ambiguity.
+- It controls which attribute or method to access first out of multiple classes having methods or attributes of same name.
+Let's understand this with an example.
+
+```
+class Vehicle():
+    def display(self): # This will be inherited and accessed by class Car
+        print("This is printed from Vehicle Class") 
+ 
+class Driver():
+    def display(self): # This will also be inherited but not accessed.
+        print("This is printed from Driver Class")
+
+class Car(Vehicle, Driver):
+    pass 
+ 
+s1 = Car()
+s1.display()
+
+print(Car.__mro__) # prints the order in which Python searches for attributes or methods. (<class '__main__.Car'>, <class '__main__.Vehicle'>, <class '__main__.Driver'>, <class 'object'>)
+```

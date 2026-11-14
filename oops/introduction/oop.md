@@ -122,3 +122,26 @@ print(s1.amount) # Attribute doesn't exist
 s1.display(345) 
 print(s1.amount) # 345
 ```
+
+Methods that works with objects are called as `Instance Methods`.
+To work with instance methods you have to create object first.
+The instance methods works on data passed by objects separately.
+
+## Static Methods
+
+Static Methods are the methods that are used in classes without any need of using object or class data.
+You can explicitly pass object or class data in static methods, but usually the static methods are used with class.
+As it does not need to work with object data, you don't need to create object to access static methods.
+
+```
+class statics:
+
+    @staticmethod
+    def add(age):
+        if age > 18:
+            print("Eligible")
+        else:
+            print("Not eligible")
+
+statics.add(19) # prints Eligible
+```
