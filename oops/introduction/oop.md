@@ -145,3 +145,20 @@ class statics:
 
 statics.add(19) # prints Eligible
 ```
+
+## Class Methods
+
+Class Methods are methods that allows you to use attributes that are defined in the class.
+- It uses `cls` parameter to pass the class as an argument.
+- In the below example, the class `Cl` contains attribute `name`, which contains class method display which uses `cls` as a parameter and `name` as argument to pass new value during method call.
+```
+class Cl:
+    name = "Raj"
+
+    @classmethod
+    def display(cls,name): # the class itself is passed as argument
+        cls.name = name # the argument name is changed 
+
+Cl.display("raman") 
+print(Cl.name) # Accessed value of the attribute
+```

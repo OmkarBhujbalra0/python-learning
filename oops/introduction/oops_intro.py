@@ -104,3 +104,15 @@ class statics:
             print("Not eligible")
 
 statics.add(34)
+
+# Class Method
+
+class Cl:
+    name = "Raj"
+
+    @classmethod
+    def display(cls,name): # class is passed as argument in cls parameter
+        cls.name = name # Raj -> raman
+
+Cl.display("raman")
+print(Cl.name) # raman
